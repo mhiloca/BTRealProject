@@ -128,8 +128,8 @@ dmypy.json
 .idea/
 
 # StaticFiles
-/static/
-
+/static
 
 # MediaFiles
-/media/
+/media
+
