@@ -31,3 +31,6 @@ class Listing(models.Model):
 
     def __str__(self):
         return self.title
+
+    def show_list_date(self):
+        return self.list_date.strftime('%m/%d/%Y')
