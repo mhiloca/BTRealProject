@@ -21,10 +21,12 @@ from django.conf import settings
 from pages import urls as pages_urls
 from listings import urls as listings_urls
 from accounts import urls as accounts_urls
+from user_contacts import urls as contacts_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(pages_urls)),
     path('listings/', include(listings_urls)),
     path('accounts/', include(accounts_urls)),
+    path('contact/', include(contacts_urls))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
