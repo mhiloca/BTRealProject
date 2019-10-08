@@ -38,13 +38,13 @@ def user_contacts(request):
         contact.save()
 
         # Send email
-        send_mail(
-            'Property Listing Inquiry',
-            'There has been an inquiry for ' + listing + '. Sign into to the dashboard for more info',
-            'aulasmimocorporal@gmail.com',
-            [realtor_email, 'mhiloca@gmail.com'],
-            fail_silently=False
-        )
+        # send_mail(
+        #     'Property Listing Inquiry',
+        #     'There has been an inquiry for ' + listing + '. Sign into to the dashboard for more info',
+        #     'aulasmimocorporal@gmail.com',
+        #     [realtor_email, 'mhiloca@gmail.com'],
+        #     fail_silently=False
+        # )
 
         messages.success(
             request,
