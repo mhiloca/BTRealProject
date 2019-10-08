@@ -126,9 +126,3 @@ dmypy.json
 
 # PYcharm
 .idea/
-
-# StaticFiles
-static/
-
-# MediaFiles
-media/
